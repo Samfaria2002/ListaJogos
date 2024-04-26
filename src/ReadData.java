@@ -4,11 +4,14 @@ import java.io.IOException;
 import java.nio.Buffer;
 
 public class ReadData {
-    public static void leitura(String file) throws IOException {
+
+    public static Item[] item = new Item[40];
+    public static int n_linhas = 0;
+    public static final String file = "src/JogosDesordenados.csv";
+
+    public static void leitura() throws IOException {
         String line = "";
         String splitBy = ",";
-        int n_linhas = 0;
-        Item[] item = new Item[40];
         
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -17,10 +20,17 @@ public class ReadData {
             item[n_linhas] = new Item(data[0], data[1], Double.parseDouble(data[2]));
             n_linhas++;
         }
+    }
 
-        for (int i = 0; i < n_linhas; i++) {
+    public static void print() throws IOException {
+        leitura();
+        for (int i = 0; i < 40; i++) {
             System.out.println(item[i]);
         }
     }
 
+    public static Item[] getItem() throws IOException {
+        leitura();
+        return item;
+    }
 }
