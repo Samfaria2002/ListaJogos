@@ -41,7 +41,7 @@ public class Sort {
 
         for (int i = 0; i < 40 - 1; i++) {
             for (int j = 0; j < 40 - i - 1; j++) {
-                if (s_item[j].getAvaliacao() > s_item[j + 1].getAvaliacao()) {
+                if (s_item[j].getAvaliacao() < s_item[j + 1].getAvaliacao()) {
                     Item temp = s_item[j];
                     s_item[j] = s_item[j + 1];
                     s_item[j + 1] = temp;
