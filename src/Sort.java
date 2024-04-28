@@ -31,7 +31,7 @@ public class Sort {
         }
 
         if (s_item != null) {
-            salvarCSV("src/JogosOrdenadosPorCategoria.csv", s_item, 40);
+            salvarCSV("JogosOrdenadosPorCategoria.csv", s_item, 40);
         }
     }
 
@@ -50,7 +50,7 @@ public class Sort {
         }
 
         if (s_item != null) {
-            salvarCSV("src/JogosOrdenadosPorAvaliacao.csv", s_item, 40);
+            salvarCSV("JogosOrdenadosPorAvaliacao.csv", s_item, 40);
         }
     }
 

@@ -1,3 +1,9 @@
-Prof, subimos o repositório para o github também, caso tenha interesse em visualizar por lá. Os nossos RAs estão no readme.md.
+Prof, subimos o repositório para o github também, caso tenha interesse em visualizar por lá.
+
+- Samuel Faria Garcia
+- RA: 42111586
+
+- Thiago Luan Pereira
+- RA: 42111150
 
 https://github.com/Samfaria2002/ListaJogos/tree/main
