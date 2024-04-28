@@ -55,10 +55,10 @@ public class Sort {
     }
 
     public static void salvarCSV(String nomeArquivo, Item[] items, int n) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))) {
-            writer.write("Jogo,Categoria,Avaliação\n");
+        try (BufferedWriter escrita = new BufferedWriter(new FileWriter(nomeArquivo))) {
+            escrita.write("Jogo,Categoria,Avaliação\n");
             for (int i = 0; i < n; i++) {
-                writer.write(items[i].toString() + "\n");
+                escrita.write(items[i].toString() + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -7,7 +7,7 @@ public class ReadData {
 
     public static Item[] item = new Item[40];
     public static int n_linhas = 0;
-    public static final String file = "src/JogosDesordenados.csv";
+    public static final String file = "D:\\projetos\\JavaListaJogos\\ListaJogos\\src\\JogosDesordenados.csv";
 
     public static void leitura() throws IOException {
         String line = "";
